@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+.App::-webkit-scrollbar {
+  color: rgba(0, 0, 0, 0);
+}
+.btn-gen {
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0);
+  border-radius: 30;
+}
+
+.btn-gen:hover {
+  scale: 1.1;
+  color: rgba(255, 255, 255, 0.6);
+  background: rgba(0, 0, 0, 0);
+  border-radius: 30;
+}
+.gradient-background {
+  background: linear-gradient(215deg, #4fdbfa, #f8ff3c, #a9b981, #0293f1, #fcd77a, #10c3ff,  rgb(6, 6, 180),rgb(159, 6, 6),rgb(6, 6, 180));
+  background-size: 560% 560%;
+  animation: gradient-animation 15s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.navbar-text {
+  background-color: #0000000a;
+  border-radius: 30px;
+  padding-block: 2rem;
+  padding-inline: 3rem;
+  font-size: 4em;
+  font-weight: "bold";
+  color: rgba(0, 0, 0, 0.651);
+}
+
+.menu-citta {
+  padding-block: 1rem;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  border-radius: 30px !important;
+
+  cursor: pointer;
+}
+.menu-citta:hover {
+  scale: 1.01;
+  border-left: 1px solid #464646;
+  border-right: 1px solid #464646;
+}
+.FetchMeteo {
+  font-weight: bolder;
+  font-size: 1.5em;
+}
+.card {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: rgba(0, 0, 0, 0.631);
+}
+.card-header {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.card-body {
+  margin-bottom: 3rem;
+}
+.card-title {
+  font-size: 1em;
+}
+.card-footer {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+}
+.card-img {
+  width: 150px;
+}
+.forecast-box {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 2rem;
+  overflow-x: scroll;
+}
+
+.forecast-box::-webkit-scrollbar {
+  color: rgba(0, 0, 0, 0);
+}
+
+
+.sfondoheader{
+  background: linear-gradient(198deg, #4fdbfa, #f8ff3c, #a9b981, #0293f1, #fcd77a, #10c3ff,  rgb(6, 6, 180),rgb(159, 6, 6),rgb(6, 6, 180));
+  background-size: 560% 560%;
+  animation: gradient-animation 25s ease infinite;
+  border-radius: 30px;
+}
+
+.title{font-family: 'Salsa', cursive;}
+
+.mapouter {
+  position: relative;
+  width: fit-content;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+}
